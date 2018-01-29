@@ -33,3 +33,7 @@ My preferred user settings:
     "editor.renderWhitespace": "all",
 }
 ```
+Optionally, when the convention is to use 2 spaces for tab, add:
+```
+  "editor.tabSize": 2
+```
