@@ -14,7 +14,7 @@ If you mess up this file and aren't able to enter keys via the GUI anymore, boot
   mount -w -o remount /
 ```
 
-## VIM arrow key insanity
+## vim arrow key insanity
 Avoid typing lots of ABCDs and use the arrow keys to navigate instead. Create the .vimrc file:
 ```
   vim ~/.vimrc
