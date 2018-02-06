@@ -37,3 +37,15 @@ Optionally, when the convention is to use 2 spaces for tab, add:
 ```
   "editor.tabSize": 2
 ```
+## .gitignore
+To ignore extensionless files automatically:
+1. add important extensionless files first (already versioned files will not be ignored)
+2. at the beginning of .gitignore
+```
+*
+!/**
+!*.*
+```
+3. For future extensionless files, `git add -f -- myFile`
+
+These rules first exclude all files, then whitelist parent folders recursively, and then re-include files that have an extension. See here: https://stackoverflow.com/questions/19023550/how-do-i-add-files-without-dots-in-them-all-extension-less-files-to-the-gitign
