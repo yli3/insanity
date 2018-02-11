@@ -37,6 +37,15 @@ Optionally, when the convention is to use 2 spaces for tab, add:
 ```
   "editor.tabSize": 2
 ```
+VS code doesn't (always?) update its file list automatically for an open folder, which seems completely insane. You can define a custom key code:
+```
+{
+  "key": "ctrl+f5",
+  "command": "workbench.files.action.refreshFilesExplorer"
+}
+```
+Or View->Command Palette (Shift+Cmd+P on Mac OS X), then "refresh explorer", or "Preferences->Keyboard Shortcuts", search for "refresh files" and define your own custom keyboard shortcut (e.g, Cmd+R).
+
 ## .gitignore
 To ignore extensionless files automatically:
 1. add important extensionless files first (already versioned files will not be ignored)
