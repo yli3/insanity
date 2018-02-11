@@ -58,3 +58,14 @@ To ignore extensionless files automatically:
 3. For future extensionless files, `git add -f -- myFile`
 
 These rules first exclude all files, then whitelist parent folders recursively, and then re-include files that have an extension. See here: https://stackoverflow.com/questions/19023550/how-do-i-add-files-without-dots-in-them-all-extension-less-files-to-the-gitign
+
+## git Collaboration
+To make a development branch into master on the remote server `origin`, provided it is locally up-to-date:
+```
+git push -u origin devbranch:master
+```
+
+To grab a file from another branch with commit hash XXXXXX:
+```
+git checkout XXXXXX filename.c
+```
