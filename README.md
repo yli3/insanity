@@ -69,3 +69,13 @@ To grab a file from another branch with commit hash XXXXXX:
 ```
 git checkout XXXXXX filename.c
 ```
+
+## git Reset
+See: https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
+
+```
+git fetch origin
+git reset --hard origin/master
+```
+
+This restores your local branch to match the remote branch exactly.
