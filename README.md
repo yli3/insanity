@@ -14,7 +14,7 @@ If you mess up this file and aren't able to enter keys via the GUI anymore, boot
   mount -w -o remount /
 ```
 
-## vim arrow key insanity
+## vim arrow keys
 Avoid typing lots of ABCDs and use the arrow keys to navigate instead. Create the .vimrc file:
 ```
   vim ~/.vimrc
@@ -37,7 +37,7 @@ Optionally, when the convention is to use 2 spaces for tab, add:
 ```
   "editor.tabSize": 2
 ```
-VS code doesn't (always?) update its file list automatically for an open folder, which seems completely insane. You can define a custom key code:
+VS code doesn't (always?) update its file list automatically for an open folder. You can define a custom key code:
 ```
 {
   "key": "ctrl+f5",
@@ -79,3 +79,6 @@ git reset --hard origin/master
 ```
 
 This restores your local branch to match the remote branch exactly.
+
+## superuser on Ubuntu
+Ubuntu doesn't have a root password by default. To run root commands use sudo. To run the shell in super mode use sudo -i or sudo -s.
