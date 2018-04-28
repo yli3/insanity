@@ -82,3 +82,8 @@ This restores your local branch to match the remote branch exactly.
 
 ## superuser on Ubuntu
 Ubuntu doesn't have a root password by default. To run root commands use sudo. To run the shell in super mode use sudo -i or sudo -s.
+
+## VMware Tools
+https://www.vmware.com/support/ws55/doc/ws_newguest_tools_linux.html
+
+open-vm-tools https://kb.vmware.com/s/article/2073803
