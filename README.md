@@ -97,9 +97,9 @@ open-vm-tools https://kb.vmware.com/s/article/2073803
 ## VirtualBox Guest Additions
 Can't symlink from Windows host, so: 
 ```
-VBoxManage guestproperty set "VM name" /VirtualBox/GuestAdd/SharedFolders/MountPrefix /
-VBoxManage guestproperty set "VM name" /VirtualBox/GuestAdd/SharedFolders/MountDir /home/
+VBoxManage guestproperty set "Ubuntu 16" /VirtualBox/GuestAdd/SharedFolders/MountPrefix /
+VBoxManage guestproperty set "Ubuntu 16" /VirtualBox/GuestAdd/SharedFolders/MountDir /home/<yourfolderhere>/
 ```
 
-To mount in home without the sf_ prefix. Check with `VboxManage guestproperty enumerate "VM name"`.
+To mount in home without the sf_ prefix. Check with `VboxManage guestproperty enumerate "Ubuntu 16"`.
 
