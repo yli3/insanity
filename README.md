@@ -57,6 +57,12 @@ To ignore extensionless files automatically:
 ```
 3. For future extensionless files, `git add -f -- myFile`
 
+I think a slight modification to the above would make it recursive, e.g apply to all executables in all directories:
+```
+**
+!/**/
+!**.*
+```
 These rules first exclude all files, then whitelist parent folders recursively, and then re-include files that have an extension. See here: https://stackoverflow.com/questions/19023550/how-do-i-add-files-without-dots-in-them-all-extension-less-files-to-the-gitign
 
 ## git Collaboration
