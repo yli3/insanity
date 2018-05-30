@@ -93,3 +93,13 @@ Ubuntu doesn't have a root password by default. To run root commands use sudo. T
 https://www.vmware.com/support/ws55/doc/ws_newguest_tools_linux.html
 
 open-vm-tools https://kb.vmware.com/s/article/2073803
+
+## VirtualBox Guest Additions
+Can't symlink from Windows host, so: 
+```
+VBoxManage guestproperty set "VM name" /VirtualBox/GuestAdd/SharedFolders/MountPrefix /
+VBoxManage guestproperty set "VM name" /VirtualBox/GuestAdd/SharedFolders/MountDir /home/
+```
+
+To mount in home without the sf_ prefix. Check with `VboxManage guestproperty enumerate "VM name"`.
+
