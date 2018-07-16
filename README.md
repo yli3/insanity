@@ -103,3 +103,9 @@ VBoxManage guestproperty set "Ubuntu 16" /VirtualBox/GuestAdd/SharedFolders/Moun
 
 To mount in home without the sf_ prefix. Check with `VboxManage guestproperty enumerate "Ubuntu 16"`.
 
+## SSH credentials
+To avoid the password prompt with every ssh or scp command for known machines, 
+
+```
+ssh-copy-id remote-user@remote-host
+```
