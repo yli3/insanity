@@ -22,6 +22,7 @@ Avoid typing lots of ABCDs and use the arrow keys to navigate instead. Create th
 Add the following to the file:
 ```
   set nocompatible
+  set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 ```
 
 ## Visual Studio Code 
