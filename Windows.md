@@ -1,4 +1,4 @@
-#Just Windows Things
+#justwindowsthings
 
 ## Outlook
 Mark items read in the reading pane:
