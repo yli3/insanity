@@ -88,6 +88,27 @@ git reset --hard origin/master
 
 This restores your local branch to match the remote branch exactly.
 
+## git shallow clone
+For large repositories and where you only need a small subset, combine **sparse checkout** with **shallow clone**:
+
+```
+git init <repo>
+cd <repo>
+git remote add origin <url>
+git config core.sparsecheckout true
+echo "desired/*" >> .git/info/sparse-checkout
+echo "desired/exclude/" >> .git/info/sparse-checkout
+git pull --depth=1 origin master
+```
+Depth is the number of latest commits to pull from each branch. You may want some of the project history locally.
+
+When `.git/info/sparse-checkout` is edited, run `git read-tree -mu HEAD`.
+
+## git clean and git reset
+`git clean -dfxn` to remove new files (-n is for dry run). 
+
+To rollback uncommitted changes, `git reset` followed by `git checkout`.
+
 ## superuser on Ubuntu
 Ubuntu doesn't have a root password by default. To run root commands use sudo. To run the shell in super mode use sudo -i or sudo -s.
 
