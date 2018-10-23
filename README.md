@@ -109,6 +109,10 @@ When `.git/info/sparse-checkout` is edited, run `git read-tree -mu HEAD`.
 
 To rollback uncommitted changes, `git reset` followed by `git checkout`.
 
+## git multiplatform development
+On Windows: `git config --global core.autocrlf true` (probably the default option used at git install)
+On Linux: `git config --global core.autocrlf input`
+
 ## superuser on Ubuntu
 Ubuntu doesn't have a root password by default. To run root commands use sudo. To run the shell in super mode use sudo -i or sudo -s.
 
