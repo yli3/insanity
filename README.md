@@ -32,7 +32,8 @@ My preferred user settings:
     "editor.minimap.enabled": false,
     "editor.wordWrap": "bounded",
     "editor.renderWhitespace": "all",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "workbench.editor.enablePreview": false 
 }
 ```
 Optionally, when the convention is to use 2 spaces for tab, add:
