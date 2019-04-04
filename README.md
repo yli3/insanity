@@ -97,11 +97,12 @@ git init <repo>
 cd <repo>
 git remote add origin <url>
 git config core.sparsecheckout true
-echo 'desired/*' >> .git/info/sparse-checkout
-echo '!desired/exclude/' >> .git/info/sparse-checkout
+echo '/.gitignore' >> .git/info/sparse-checkout 
+echo 'desiredFolder/*' >> .git/info/sparse-checkout
+echo '!desiredFolder/exclude/' >> .git/info/sparse-checkout
 git pull --depth=1 origin master
 ```
-Depth is the number of latest commits to pull from each branch. You may want some of the project history locally. Note that single quotes is necessary or you will get an "event not found" error for strings beginning with **!**. This is because **!** is a special character to bash.
+Depth is the number of latest commits to pull from each branch. You may want some of the project history locally. Note that single quotes is necessary or you will get an "event not found" error for strings beginning with **!**. This is because **!** is a special character to bash. 
 
 When `.git/info/sparse-checkout` is edited, run `git read-tree -mu HEAD`.
 
