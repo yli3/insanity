@@ -1,6 +1,9 @@
 # insanity
 Trying to maintain the same user experience across multiple VMs.
 
+## Cleaning the home directory
+`xdg-user-dirs-update`
+
 ## Keyboards
 Edit the X keyboard extension to remap the SUPER key to control. Clear cache afterwards, then reboot:
 ```
