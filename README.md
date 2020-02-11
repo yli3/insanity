@@ -159,3 +159,6 @@ Running list of things I like to have installed, but which may not be. TODO: mak
 sudo apt install ncdu
 sudo apt install tmux
 ```
+
+## Source scripts
+Use `. ~/path/to/script.sh` (note the extra period at the beginning)
