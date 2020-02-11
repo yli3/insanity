@@ -152,3 +152,10 @@ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key ad
 By default Chrome likes to ask for a keyring password every time on first start.
 
 To do it once, and unlock every time at login, install `libpam-gnome-keyring` and then log out, and back in again.
+
+## Ubuntu setup list
+Running list of things I like to have installed, but which may not be. TODO: make a single initialization script for new machines.
+```
+sudo apt install ncdu
+sudo apt install tmux
+```
