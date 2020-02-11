@@ -142,3 +142,9 @@ To avoid the password prompt with every ssh or scp command for known machines,
 ssh-copy-id remote-user@remote-host
 ```
 Additionally: create an alias in the SSH config file so that you can simply `ssh alias` (also applies to scp). See: https://askubuntu.com/questions/257472/host-alias-for-ssh
+
+## Chrome update broken on Ubuntu
+Do this:
+```
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+```
