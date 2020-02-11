@@ -148,3 +148,7 @@ Do this:
 ```
 wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 ```
+## Chrome keyring
+By default Chrome likes to ask for a keyring password every time on first start.
+
+To do it once, and unlock every time at login, install `libpam-gnome-keyring` and then log out, and back in again.
